@@ -1,0 +1,41 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    function okno_zamknij() 
+    {window.close()}
+</script>
+
+</head>
+
+<body>
+    <textarea name="mar" cols="120" rows="25 readonly">
+        <html>
+            <head>
+                <script language="JavaScript">
+                    function okno_zamknij() 
+                    {window.close()}
+                </script>
+            </head>
+            <body>
+                <div style="color:red;font-size:20px">
+                    <script language="JavaScript">
+                        var suma_mar=0;
+                        for(i_mar=0; i_mar <= 1000000; i_mar++);
+                        {
+                            suma_mar=suma_mar+1/i_mar
+                        }
+                        document.write("suma: " + suma_mar)
+            
+                    </script>
+                </div>
+                <br>
+                <button onclick="okno_zamknij()">zamknij</button>
+            </body>
+            </html>
+    </textarea>
+<br><br>
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>

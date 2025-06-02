@@ -1,0 +1,45 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    function okno_zamknij() 
+    {window.close()}
+</script>
+
+</head>
+
+<body>
+    <textarea name="mar" cols="120" rows="29 readonly">
+        <html>
+            <head>
+                <script language="JavaScript">
+                    function okno_zamknij() 
+                    {window.close()}
+                </script>
+            </head>
+            <body>
+                <div style="color:red;font-size:20px">
+                    <script language="JavaScript">
+                        var silnia_mar=1;
+                        var n_mar=prompt("podaj liczbe z ktorej obliczy sie silnie: ");
+                        if(n_mar > 0)
+                        {
+                            for ( var i_mar=1; i_mar<=n_mar; i_mar++)
+             {
+                                silnia_mar=silnia_mar*i_mar;
+                            }
+                            document.write("silnia z "+ n_mar +" = " + silnia_mar);
+                        }else
+                        document.write("silnia z "+ n_mar +" = 1");
+                    </script>
+                </div>
+                <br>
+                <button onclick="okno_zamknij()">zamknij</button>
+            </body>
+            </html>
+    </textarea>
+<br><br>
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>
