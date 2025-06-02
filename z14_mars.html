@@ -1,0 +1,32 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+ </script>
+</head>
+
+<body>
+
+    <div style="font-size:30px;">
+        <script language="JavaScript">
+            var liczba=prompt("liczba=","");
+        
+            var m_mar=parseFloat(liczba);
+            
+            document.write("1/"+ m_mar +"=");
+            document.write("1/"+ (2+m_mar) +"+");
+            document.write("1/"+ (2+m_mar)*(1+m_mar) + "+");
+            document.write("1/"+ (m_mar*(1+m_mar)) +"<br>");
+        </script>
+    </div>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+<script type="text/javascript">
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    function okno_zamknij() 
+    {window.close()}
+</script>
+
+</head>
+
+<body>
+    <textarea name="mar" cols="120" rows="41 readonly">
+        <!DOCTYPE html>   
+        <head>    
+            <title>Sprawdzenie danych Marszalec </title>    
+            <meta charset="utf-8">   
+        </head>  
+        <body> 
+            <div style="font-size:12px;"> 
+            <script language="JavaScript"> 
+            
+            var imie=prompt("podaj imie: ","");
+            var nazw=prompt("podaj nazwisko: ","");
+            
+            var a_mar=(imie.length % 4)+5;
+            var b_mar=(nazw.length % 6)+20;
+            
+            for(var i=0; i<b_mar;i++)
+            {
+                document.write("*");
+            }
+        
+            for(var i=0; i<a_mar-2;i++)
+            {
+                document.write("<br>*");
+                for(var j=0; j<b_mar-2;j++)
+                {
+                    document.write("&nbsp;&nbsp;");
+                }
+                document.write("*");
+            }
+            document.write("<br>");
+        
+            for(var i=0; i<b_mar;i++)
+            {
+                document.write("*");
+            }
+            </script> 
+            </div> 
+        </body> 
+        </html> 
+    </textarea>
+<br><br>
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>

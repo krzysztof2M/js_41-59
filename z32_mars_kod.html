@@ -1,0 +1,70 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    function okno_zamknij() 
+    {window.close()}
+</script>
+
+</head>
+
+<body>
+    <textarea name="mar" cols="120" rows="53 readonly">
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Zadanie 32</title>
+            <script type="text/javascript">
+        
+                function Pudelko(szerokosc, wysokosc, kolor, objetosc) {
+                    this.szerokosc = szerokosc;
+                    this.wysokosc = wysokosc;
+                    this.kolor = kolor;
+                    this.objetosc = objetosc;
+                }
+        
+                Pudelko.prototype.pokaz = function() {
+                    document.write('szerokosc: ' + this.szerokosc + '<br>');
+                    document.write('wysokosc: ' + this.wysokosc + '<br>');
+                    document.write('kolor: ' + this.kolor + '<br>');
+                    document.write('objetosc: ' + this.objetosc + '<br>');
+                }
+        
+                var pudelko1 = new Pudelko('20.5dm', '2m', 'czerwony', '201L');
+                var pudelko2 = new Pudelko('30dm', '1.5m', 'niebieski', '100m^3');
+                var pudelko3 = new Pudelko('25dm', '1.8m', 'zielony','217ml');
+        
+                document.write("<b>Pudełko 1:</b><br>");
+                pudelko1.pokaz();
+        
+                document.write("<br><b>Pudełko 2:</b><br>");
+                pudelko2.pokaz();
+        
+                document.write("<br><b>Pudełko 3:</b><br>");
+                pudelko3.pokaz();
+                document.write("<br>");
+        
+        
+                function okno_zamknij() {
+                    window.close();
+                }
+            </script>
+        </head>
+        <body>
+            Programowanie obiektowe. <br>
+            Obiekt to pudelko<br>
+            Pola:<br>
+            szerokosc<br>
+            wysokosc<br>
+            kolor<br>
+            metoda: pokaz<br>
+        
+            <button onclick="okno_zamknij()">Zamknij okno</button>
+        </body>
+        </html>
+    </textarea>
+<br><br>
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>

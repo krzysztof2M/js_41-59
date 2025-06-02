@@ -1,0 +1,35 @@
+<!DOCTYPE html>   
+<head>    
+    <meta charset="utf-8">   
+</head>  
+<body> 
+    <div style="color:red;font-size:50px;"> 
+    <script language="JavaScript"> 
+    do{
+        do { 
+            var liczba1=prompt("bok a=",""); 
+            var a_mar=parseFloat(liczba1); 
+        } 
+        while (isNaN(a_mar) || a_mar <= 0); 
+
+        do { 
+            var liczba2=prompt("bok b=",""); 
+            var b_mar=parseFloat(liczba2); 
+        } 
+        while  (isNaN(b_mar) || b_mar <= 0);    
+    
+        do { 
+          var liczba3=prompt("bok c=",""); 
+          var c_mar=parseFloat(liczba3); 
+        }    
+        while (isNaN(c_mar) || c_mar <= 0); 
+    }
+    while (!(a_mar + b_mar > c_mar && a_mar + c_mar > b_mar && b_mar + c_mar > a_mar));
+    
+    document.write("bok a=" + a_mar + "<br>"); 
+    document.write("bok b=" + b_mar + "<br>"); 
+    document.write("bok c=" + c_mar + "<br>"); 
+    </script> 
+    </div> 
+</body> 
+</html> 

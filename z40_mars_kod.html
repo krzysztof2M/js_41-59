@@ -1,0 +1,111 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    function okno_zamknij() 
+    {window.close()}
+</script>
+
+</head>
+
+<body>
+    <textarea name="mar" cols="160" rows="35 readonly">
+        <html> 
+            <head> 
+                <script language="JavaScript">
+                function okno_zamknij() {
+                    window.close() }
+            
+                function dodawanie_mar() {
+                var X= parseFloat(document.getElementById('X').value);
+                var Y= parseFloat(document.getElementById('Y').value);
+                var suma_mar= X+Y;
+                document.getElementById("nazwa").innerHTML ="wynik dodawania wynosi: "+suma_mar.toFixed(2); 
+                }    
+            
+                function odejmowanie_mar() {
+                var X= parseFloat(document.getElementById('X').value);
+                var Y= parseFloat(document.getElementById('Y').value);
+                var roznica_mar= X-Y;
+                document.getElementById("nazwa").innerHTML ="wynik dodawania wynosi: "+roznica_mar.toFixed(2); 
+                } 
+            
+                function mnozenie_mar() {
+                var X= parseFloat(document.getElementById('X').value);
+                var Y= parseFloat(document.getElementById('Y').value);
+                var iloczyn_mar= X*Y;
+                document.getElementById("nazwa").innerHTML ="wynik dodawania wynosi: "+iloczyn_mar.toFixed(2); 
+                } 
+            
+                function dzielenie_mar() {
+                var X= parseFloat(document.getElementById('X').value);
+                var Y= parseFloat(document.getElementById('Y').value);
+                var iloraz_mar= X/Y;
+                document.getElementById("nazwa").innerHTML ="wynik dodawania wynosi: "+iloraz_mar.toFixed(2); 
+                } 
+            
+                
+                function teoria_mar() {
+                document.write("<font color=green size=4>Pierwsza linia teorii</font>"+"<br>");
+            document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>labelfor=</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>a</font>"+"<font color=red size=4>&quot;</font>"+"<fontcolor=red size=4>&gt;</font>");
+            document.write("<font color=red size=4>Podaj pierwszą liczbę:</font>");
+            document.write("<font color=red size=4>&lt;</font>"+"<font color=redsize=4>/label</font>"+"<font color=red size=4>&gt;</font>");
+            document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>inputtype=</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>number</font>"+"<font color=redsize=4>&quot;</font>");
+            document.write("<font color=red size=4> id=</font>"+"<font color=red size=4>&quot;</font>");
+            document.write("<font color=red size=4>a</font>"+"<font color=red size=4>&quot;</font>"+"<fontcolor=red size=4>&gt;</font>"+"<br>");
+                document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+            document.write("<font color=red size=4>wykonanie numerycznego pola formularza z opisem 'Podajpierwszą liczbę:' a nazwa pola to 'a' </font>"+"<br><br>");
+                
+                document.write("<font color=green size=4>Druga linia teorii</font>"+"<br>");
+            document.write("<font color=red size=4>&lt;input type=&quot;button&quot;value=&quot;DODAWANIE&quot;onclick=&quot;suma()&quot;&gt;</font>"+"<br>");
+                document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+            document.write("<font color=red size=4>Wykonanie przycisku o nazwie DODAWANIE i z takim samym napisem, kliknięcie myszkąuruchamia funkcję suma().</font>"+"<br><br>");
+            
+                document.write("<font color=green size=4>Trzecia linia teorii</font>"+"<br>");
+            document.write("<font color=red size=4>var a = document.getElementById(&quot;a&quot;).value;</font>"+"<br>");
+                document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+            document.write("<font color=red size=4>wpisanie do zmiennej &quot;a&quot; wartości z elementu o Id &quot;a&quot; (zbieżność nazw)</font>"+"<br><br>");
+            
+                document.write("<font color=green size=4>Czwarta linia teorii</font>"+"<br>");
+            document.write("<font color=red size=4>if (a == &quot;&quot; || b == &quot;&quot;)</font>"+"<br>");
+                document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+            document.write("<font color=red size=4>pobranie wartości Id o nazwie &quot;wynik&quot; i wyprowadzenie w oknie przeglądarki tekstu&quot;Wynik działania wynosi: &quot; oraz wartości zmiennej suma;</font>"+"<br><br>");
+            
+                document.write("<font color=green size=4>Piąta linia teorii</font>"+"<br>");
+            document.write("<font color=red size=4>document.getElementById(&quot;wynik&quot;).innerHTML = &quot;Wynik działania wynosi: &quot; + suma;</font>"+"<br>");
+                document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>");
+            document.write("<font color=red size=4>pobranie wartości Id o nazwie &quot;wynik&quot; i wyprowadzenie w oknie przeglądarki tekstu&quot;Wynik działania wynosi: &quot; oraz wartości zmiennej suma;</font>"+"<br><br>");
+            
+                } 
+             </script>
+            </head> 
+            
+            
+            <body> 
+            <h1>PROSTE DZIAŁANIA</h1>
+            <h2>Marszalec kalsa 3F</h2>
+            
+            <b>Podaj pierwsza liczbe </b><input type="text" id="X" > <br><br>
+            <b>Podaj druga liczbe </b><input type="text" id="Y" > <br><br>
+            
+            
+            <button onclick="dodawanie_mar()"><b>DODAWANIE</b></button>
+            <button onclick="odejmowanie_mar()"><b>ODEJMOWANIE</b></button>
+            <button onclick="mnozenie_mar()"><b>MNOŻENIE</b></button>
+            <button onclick="dzielenie_mar()"><b>dzielenie</b></button>
+            <button onclick="teoria_mar()"><b>TEORIA-marszalec</b></button>
+            
+            <div style="color:black;font-size:15px;" id="nazwa"></div> <br><br><br>
+            
+            
+               <button onclick="okno_zamknij()">zamknij okno</button>
+            </body> 
+            </html>
+    </textarea>
+<br><br>
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+ <head>
+ <script type="text/javascript">
+   function okno_zamknij() {window.close()}
+
+ var pudelko = {
+    szerokosc: '20.5dm',
+    wysokosc: '2m',
+    kolor: 'czerwony',
+pokaz: function ()
+{
+ document.write( 'szerokosc: ' + this.szerokosc + '<br>')
+ document.write( 'wysokosc: ' + this.wysokosc + '<br>')
+ document.write( 'kolor: ' + this.kolor + '<br>')
+ }
+}
+pudelko.pokaz();
+ </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to pudełka
+ br>
+ Pola:<br>
+ szerokosc<br>
+ wysokosc<br>
+ kolor<br>
+ metoda: pokaz<br>
+ <br>
+
+   <button onclick="okno_zamknij()">zamknij okno</button>
+</body>
+</html>

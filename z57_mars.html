@@ -1,0 +1,27 @@
+<!DOCTYPE html>   
+<head>    
+    <meta charset="utf-8">   
+    <script language="JavaScript">
+        function okno_zamknij() 
+        {window.close()}
+    </script>
+</head>  
+<body> 
+
+<div style="color:red;font-size:12px;"> 
+<script language="JavaScript"> 
+    var pier, pier2;
+    for(var i=19; i<=(19+15); i++)
+    {
+    pier=Math.sqrt(i);
+    pier2=Math.sqrt(pier);
+    document.write("i="+i+"&nbsp;&nbsp;&nbsp;&nbsp; pierw_2("+i+")="+pier.toFixed(2)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pierw_4("+i+")="+pier2.toFixed(2)+"<br>")
+    }
+
+
+</script>
+<br>
+<button onclick="okno_zamknij()">zamknij</button>
+</div>
+</body>
+</html>

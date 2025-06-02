@@ -1,0 +1,35 @@
+body {
+    background-color: #100720;
+    color: white;
+    }
+
+p {
+    color:rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: bold;
+    }
+
+button {
+    background-color: rgba(255, 94, 247, 1);
+    color: rgb(255, 255, 255);
+    font-size: 12.5px;
+    font-weight: bold;
+    padding: 6px;
+    border: 2px solid black;
+    border-radius: 13px;
+    text-align: center;
+    margin-right: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    background-color: rgba(2, 245, 245, 1); 
+}
+
+
+
+    
+.v2 {
+    margin-top:20px;
+    }  

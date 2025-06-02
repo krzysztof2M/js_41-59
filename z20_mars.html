@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function okno_zamknij() 
+        {window.close()}
+    </script>
+    
+</head>
+<body>
+<script type="text/javascript">
+    
+    function dlugosc_mar() {
+    var Xa= parseFloat(document.getElementById('Xa_mar').value);
+    var Ya= parseFloat(document.getElementById('Ya_mar').value);
+    var Xb= parseFloat(document.getElementById('Xb_mar').value);
+    var Yb= parseFloat(document.getElementById('Yb_mar').value);
+    var Xc= parseFloat(document.getElementById('Xc_mar').value);
+    var Yc= parseFloat(document.getElementById('Yc_mar').value);
+
+    var AB = Math.pow(Xa - Xb, 2) + Math.pow(Ya - Yb, 2);
+    var ab = Math.sqrt(AB);
+    var BC = Math.pow(Xb - Xc, 2) + Math.pow(Yb - Yc, 2);
+    var bc = Math.sqrt(BC);
+    var AC = Math.pow(Xa - Xc, 2) + Math.pow(Ya - Yc, 2);
+    var ac = Math.sqrt(AC);
+    document.getElementById("nazwa").innerHTML = "AB = " + ab.toFixed(2) + " cm<br>BC = " + bc.toFixed(2) + " cm<br>AC = " + ac.toFixed(2) + " cm";
+    }
+
+    
+</script>
+   <h1>Trójkąt z współrzędnych</h1><br><br>
+    Podaj Xa <input type="text" id="Xa_mar" > <br><br>
+    Podaj Ya <input type="text" id="Ya_mar" > <br><br>
+    Podaj Xb <input type="text" id="Xb_mar" > <br><br>
+    Podaj Yb <input type="text" id="Yb_mar" > <br><br>
+    Podaj Xc <input type="text" id="Xc_mar" > <br><br>
+    Podaj Yc <input type="text" id="Yc_mar" > <br><br>
+
+
+
+
+
+    <input type="button" name="pole" value="długosci AB, BC, AC" onclick="dlugosc_mar()"><br><br>
+
+    <div style="color:red;font-size:30px;" id="nazwa"></div> <br><br>
+    <button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>

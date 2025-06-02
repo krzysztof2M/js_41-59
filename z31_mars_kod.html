@@ -1,0 +1,55 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    function okno_zamknij() 
+    {window.close()}
+</script>
+
+</head>
+
+<body>
+    <textarea name="mar" cols="120" rows="38 readonly">
+        <html>
+ <head>
+ <script type="text/javascript">
+   function okno_zamknij() {window.close()}
+
+ var pudelko = {
+    szerokosc: '20.5dm',
+    wysokosc: '2m',
+    kolor: 'czerwony',
+pokaz: function ()
+{
+ document.write( 'szerokosc: ' + this.szerokosc + '<br>')
+ document.write( 'wysokosc: ' + this.wysokosc + '<br>')
+ document.write( 'kolor: ' + this.kolor + '<br>')
+ }
+}
+pudelko.objetosc= '100M^3';
+pudelko.glebokosc= '25cm';
+function show_alert() { alert("objetosc: " + pudelko.objetosc + ", glebokosc: " + pudelko.glebokosc); }
+pudelko.pokaz()
+ </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to pudelko<br>
+ Pola:<br>
+ szerokosc<br>
+ wysokosc<br>
+ kolor<br>
+ metoda: pokaz<br>
+
+   <button onclick="show_alert()">Pokaż objetosc i glebokosc pudelka</button> <br><br>
+
+   <button onclick="okno_zamknij()">zamknij okno</button>
+</body>
+</html>
+    </textarea>
+<br><br>
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>

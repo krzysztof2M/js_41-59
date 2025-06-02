@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="pl-PL"> 
+<HTML>
+<head>
+    <title>zadanie 5 - Marszalec</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+             }
+
+    </style>
+   
+   
+   <script>
+    function okno_zamknij() {
+        window.close()
+    }
+
+    
+ function WinOpen_zdj1() 
+ {
+window.open("zdj1.html","","height=480,width=90,top=600,left=100");
+ }
+
+ function WinOpen_zdj2() 
+ {
+window.open("zdj2.html","","height=480,width=90,top=450,left=400");
+ }
+
+ function WinOpen_zdj3() 
+ {
+window.open("zdj3.html","","height=480,width=90,top=300,left=700");
+ }
+
+ function WinOpen_zdj4() 
+ {
+window.open("zdj4.html","","height=480,width=90,top=150,left=1000");
+ }
+    </script>
+</head>
+<body>
+    <script>    
+   
+    document.write("<div style='text-align: center; font-size: 1cm; color: red;'><p><b>wykonał: Krzysztof Marszalec, mój numer w dzienniku 19, czyli mam układ [(19) mod 4=3] układ 3</b></p></div> ");
+        
+</script>
+<br><br>
+
+<div class="container">
+    
+<input type="button_zdj1"  value="grafika1" onclick="WinOpen_zdj1(' ')">
+<input type="button_zdj2"  value="grafika2" onclick="WinOpen_zdj2(' ')">
+<input type="button_zdj3"  value="grafika3" onclick="WinOpen_zdj3(' ')">
+<input type="button_zdj4"  value="grafika4" onclick="WinOpen_zdj4(' ')" style="Width:30">
+
+</div>
+<div class="container">
+<br><br><br><br><br><br><br><br><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+
+</div>
+
+</body>
+</html>

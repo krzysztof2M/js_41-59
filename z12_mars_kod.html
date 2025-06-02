@@ -1,0 +1,57 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+
+<body>
+
+    <textarea name="mar" cols="120" rows="35 readonly">
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+ </script>
+</head>
+
+<body>
+
+    <div style="color:rgb(31, 255, 1);font-size:49px;">
+        <script language="JavaScript">
+            var D1=prompt("dzien1=","");
+            var G1=prompt("godzina1=","");
+            var D2=prompt("dzien2=","");
+            var G2=prompt("godzina2=","");
+
+            var d1=parseFloat(D1);
+            var g1=parseFloat(G1);
+            var d2=parseFloat(D2);
+            var g2=parseFloat(G2);
+
+            var a=d1*24*60*60+g1*60*60;
+            var b=d2*24*60*60+g2*60*60;
+            var sekundy=a-b;
+            document.write("Ilość sekund między dwoma dniami="+sekundy+"<br>");
+        </script>
+    </div>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+<script type="text/javascript">
+</script>
+
+</body>
+</html>
+
+    </textarea>
+    <br>  <br>
+    <button onclick="okno_zamknij()">zamknij okno</button>
+</body>
+</html>

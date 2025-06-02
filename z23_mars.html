@@ -1,0 +1,50 @@
+<html>
+<head>
+    <script type="text/javascript">
+    function okno_zamknij() {
+        window.close();
+    }
+
+    function oblicz_marszalec() {
+        var d_mar = parseFloat(document.getElementById('d_mar').value);
+        var x_mar = parseFloat(document.getElementById('x_mar').value);
+
+        var drabina_mar_2 = Math.pow(d_mar, 2) + Math.pow(x_mar, 2);
+        var drabina_mar = Math.sqrt(drabina_mar_2);
+        var alfa_mar = Math.atan(d_mar / x_mar) * (180 / Math.PI) ;
+
+        document.getElementById("drabina_mar").value  = drabina_mar.toFixed(2);
+        document.getElementById("alfa_mar").value = alfa_mar.toFixed(2);
+    }
+ </script>
+
+<style type="text/css">
+     input[type="text"] {
+            width: 75px;
+            padding: 3px;
+            margin: 4px 0 0 5px;
+            border-radius: 15px;
+        }
+
+</style>
+
+</head>
+<body>
+    
+    <label for="d_mar">Podaj d=</label>
+    <input type="text" id="d_mar">
+
+    <label for="x_mar">Podaj x=</label>
+    <input type="text" id="x_mar"><br><br>
+
+    <button onclick="oblicz_marszalec()(' ')">Oblicz</button><br>
+
+    <label for="drabina_mar">Drabina=</label>
+    <input type="text" id="drabina_mar" readonly>
+
+    <label for="alfa_mar">Alfa=</label>
+    <input type="text" id="alfa_mar" readonly><br><br>
+
+    <button onclick="okno_zamknij()">zamknij okno</button>
+</body>
+</html>

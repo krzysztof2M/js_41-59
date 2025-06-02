@@ -1,0 +1,45 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    function okno_zamknij() 
+    {window.close()}
+</script>
+
+</head>
+
+<body>
+    <textarea name="mar" cols="120" rows="30 readonly">
+        <html>
+            <head>
+                <script language="JavaScript">
+                    function okno_zamknij() 
+                    {window.close()}
+                </script>
+            </head>
+            <body>
+                <div > 
+                    <script language="JavaScript">
+                        document.write("Ilość wykonywania pętli = 11" + "<br>");
+                        document.write("Wielkość liter = 40px" + "<br>");
+                        var n_mar = prompt("podaj liczbe: ","");
+                        for ( var i_mar=1; i_mar<=11; i_mar++)
+                        {
+                            if(n_mar%2 == 0)
+                            {
+                                document.write("<span style='color:blue;font-size:40px'>Marszalec</span>" + "<br>");
+                            }else document.write("<span style='color:green;font-size:40px'>Krzysztof</span>" + "<br>");
+                            
+                        }
+                    </script>
+                </div>
+                <br>
+                <button onclick="okno_zamknij()">zamknij</button>
+            </body>
+            </html>
+    </textarea>
+<br><br>
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>

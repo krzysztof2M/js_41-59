@@ -1,0 +1,47 @@
+<html>
+<head>
+    <script type="text/javascript">
+    function okno_zamknij() {
+        window.close();
+    }
+
+    function oblicz_marszalec() {
+        var a_mar = parseFloat(document.getElementById('a_mar').value);
+        var b_mar = parseFloat(document.getElementById('b_mar').value);
+
+        var pole_mar = a_mar * b_mar;
+        var obw_mar =2*a_mar + 2*b_mar;
+
+        document.getElementById("pole_mar").value  = pole_mar.toFixed(2);
+        document.getElementById("obw_mar").value = obw_mar.toFixed(2);
+    }
+ </script>
+   
+<style type="text/css">
+     input[type="text"] {
+            width: 125px;
+            padding: 3px;
+            margin: 4px 0 0 5px;
+        }
+
+</style>
+</head>
+<body>
+    
+    <label for="a_mar">Podaj bok a:</label>
+    <input type="text" id="a_mar"><br>
+
+    <label for="b_mar">Podaj bok b:</label>
+    <input type="text" id="b_mar"><br><br>
+
+    <input type="button" value="Oblicz" onclick="oblicz_marszalec()"><br>
+
+    <label for="pole_mar">Pole: </label>
+    <input type="text" id="pole_mar" readonly><br>
+
+    <label for="obw_mar">obwód:</label>
+    <input type="text" id="obw_mar" readonly><br><br>
+
+    <button onclick="okno_zamknij()">zamknij okno</button>
+</body>
+</html>

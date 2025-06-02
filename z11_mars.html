@@ -1,0 +1,32 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+ </script>
+</head>
+
+<body>
+
+    <div style="color:rgb(31, 255, 1);font-size:49px;">
+        <script language="JavaScript">
+            var dzien1=prompt("dzien1=","");
+            var dzien2=prompt("dzien2=","");
+            var roznicza;
+            var a=parseFloat(dzien1);
+            var b=parseFloat(dzien2);
+            roznica=b-a;
+            sekundy=roznica*24*60*60;
+            document.write("Ilość sekund między dwoma dniami="+sekundy+"<br>");
+        </script>
+    </div>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+<script type="text/javascript">
+</script>
+
+</body>
+</html>

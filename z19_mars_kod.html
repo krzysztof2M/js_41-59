@@ -1,0 +1,45 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    function okno_zamknij() 
+    {window.close()}
+</script>
+
+</head>
+
+<body>
+    <textarea name="mar" cols="120" rows="35 readonly">
+        <html>
+            <head>
+                <meta charset="UTF-8">
+                <link rel="stylesheet" href="styl.css">
+            </head>
+            <body>
+            <script type="text/javascript">
+                function pole_marszalec() {
+                var a_mar= parseFloat(document.getElementById('dlugosc').value);
+                var b_mar= a_mar*a_mar;
+                document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_mar.toFixed(2)+" cm^2"; 
+                }
+            
+                function obwod_marszalec() {   
+                var a_mar= parseFloat(document.getElementById('dlugosc').value);
+                var b_mar= 4*a_mar;
+                document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_mar.toFixed(2)+" cm"; 
+                }
+            </script>
+               <h1>Wszystko o KWADRACIE</h1><br><br>
+                Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+                <input type="button" name="pole" value="Oblicz pole" Onclick="pole_marszalec()"><br><br>
+                <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_marszalec()"><br><br>
+                <div style="color:red;font-size:50px;"id="nazwa"></div>
+            </body>
+            </html>
+            
+    </textarea>
+<br><br>
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    function okno_zamknij() 
+    {window.close()}
+</script>
+
+</head>
+
+<body>
+    <textarea name="mar" cols="120" rows="28 readonly">
+     <!DOCTYPE html>   
+<head>    
+<title>Sprawdzenie danych Marszalec </title>    
+<meta charset="utf-8">  
+
+</head>  
+<body> 
+<div style="color:red;font-size:50px;"> 
+<script language="JavaScript"> 
+do { 
+    var liczba1=prompt("wysokość=",""); 
+    var h_mar=parseFloat(liczba1); 
+} 
+while ( h_mar<=0 || isNaN(h_mar)); 
+
+do { 
+    var liczba1=prompt("podstawę=",""); 
+    var a_mar=parseFloat(liczba1);  
+} 
+while(!( a_mar>0));     var Pole=a_mar*h_mar/2; 
+document.write("Pole="+Pole.toFixed(2)+" cm^2"+"<br>"); 
+
+</script> 
+</div> 
+</body> 
+</html> 
+    </textarea>
+<br><br>
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>

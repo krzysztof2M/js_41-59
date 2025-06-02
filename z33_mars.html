@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadanie 32</title>
+    <script type="text/javascript">
+
+        function user(email, haslo, adr_url) {
+            this.email = email;
+            this.haslo = haslo;
+            this.adr_url = adr_url;
+        }
+
+        Pudelko.prototype.pokaz = function() {
+            document.write('email: ' + this.email + '<br>');
+            document.write('haslo: ' + this.haslo + '<br>');
+            document.write('adres url awatara: ' + this.adr_url + '<br>');
+        }
+
+        var user1 = new user('abc123@gmail.com', 'zaq1@WSX', 'www.123.pl');
+        var user2 = new user('efg@wp.pl', '1qaz2wsx', 'www.efg.com');
+        var user3 = new user('skibidi@gmail.com', 'sigma123', 'www.chad.pl');
+
+        var login= parseFloat(document.getElementById('log').value);
+        var hasło= parseFloat(document.getElementById('password').value);
+        //document.write("<b>Pudełko 1:</b><br>");
+        //pudelko1.pokaz();
+        //document.write("<br>");
+
+
+        function okno_zamknij() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+    <script language="JavaScript">
+    
+    function login() {
+    if(login == user1){
+        if(hasło == user1.haslo){
+            document.getElementById("nazwa").innerHTML ='login i hasło sie zgadza';
+        }
+    }
+
+}
+ 
+
+    
+</script>
+Podaj login: <input type="text" id="log"> <br>
+Podaj hasło: <input type="password" id="password"> <br>
+<input type="button" name="pole" value="zaloguj" Onclick="login"><br><br>
+<div style="color:red;font-size:50px;"id="nazwa"></div>
+
+
+<button onclick="okno_zamknij()">Zamknij okno</button>
+</body>
+</html>

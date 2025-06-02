@@ -1,0 +1,45 @@
+
+<html> 
+<head> 
+<title>
+ Przykład obliczenia V i Pc walca
+</title>
+
+<style type="text/css">
+    input[type="button"] {
+           width: 75px;
+           padding: 3px;
+           margin: 3px 0 0 5px;
+           border-radius: 15px;
+       }
+
+</style>
+
+ <script language="JavaScript">
+
+function fun_kow() {
+ var x_mar = prompt("Podaj kolor", "");
+ if(x_mar == 1 || x_mar.toLowerCase() == "czerwony") {
+document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); }
+ else if(x_mar == 2 || x_mar.toLowerCase() == "niebieski") {
+document.write('<h6 style="color:red;">wczytałeś kolor niebieski</h6><br />');
+}
+}
+function okno_zamknij() {window.close()}
+
+ </script>
+
+</head> 
+<body> 
+    
+    <h1 style="color:green">MENU</h1><br>
+    <h2 style="color:red">1-CZERWONY</h2>
+    <h2 style="color:blue">2-NIEBIESKI</h2>
+    
+    <input type="button" name="Marszalec" value="Oblicz" onclick="fun_kow()" />
+
+    <br><br><br>
+    <input type="button" name="Marszalec" value="zamknij" onclick="okno_zamknij()" />
+
+</body> 
+</html>

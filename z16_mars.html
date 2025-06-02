@@ -1,0 +1,40 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+ </script>
+</head>
+
+<body>
+
+    <div style="font-size:30px;">
+        <script language="JavaScript">
+            var A_mar=prompt("A=","");
+            var A=parseFloat(A_mar);
+            var B_mar=prompt("B=","");
+            var B=parseFloat(B_mar);
+
+            var c=A*A*A;
+            var d=3*A*A*B;
+            var e=3*A*B*B;
+            var f=B*B*B;
+            var s=c+d+e+f;
+
+            document.write("A="+ A +"      B="+ B +"<br>");
+            document.write("("+A+" + "+B+")^3=");
+            document.write(A+"^3 + 3*(("+A+")^2)*("+B+") + 3*("+A+")*(("+B+")^2) + "+B+"^3 =");
+            document.write(c+" + "+d+" + "+e+" + "+f+" = "+s+"<br>");
+          
+        </script>
+    </div>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+<script type="text/javascript">
+</script>
+
+</body>
+</html>

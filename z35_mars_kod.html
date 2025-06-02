@@ -1,0 +1,35 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    function okno_zamknij() 
+    {window.close()}
+</script>
+
+</head>
+
+<body>
+    <textarea name="mar" cols="120" rows="18 readonly">
+        <html>
+            <body>
+            <div style="color:red;font-size:50px;">
+             <script language="JavaScript">
+            var x=prompt("podaj liczbę x=","");
+             var a_dana_mar=parseFloat(x);
+             document.write("wczytana liczba x="+a_dana_mar+"<br>");
+             if(a_dana_mar>0)
+             {document.write("wczytana liczba jest większa od 0"+"<br>");}
+             if(a_dana_mar==0)
+             {document.write("wczytana liczba jest rowna 0"+"<br>");}
+             if(a_dana_mar<0)
+             {document.write("wczytana liczba jest mniejsza od 0"+"<br>");}
+             </script>
+            </div>
+            </body>
+            </html>
+    </textarea>
+<br><br>
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>
